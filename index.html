@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <section class="pick">
+    <div class="topbar">
+      <div class="gamedisplay">
+        <h1>
+          ROCK <br> PAPER <br> SCISSORS 
+        </h1>
+      </div>
+      <div class="scoredisplay">
+        <h4>SCORE</h4>
+        <h1 id="score">0</h1>
+      </div>
+    </div>
+  
+    <div class="choices">
+      <div class="up">
+        <div class="paper">
+          <img src="./images/icon-paper.svg" alt="">
+        </div>
+        <div class="scissors">
+          <img src="./images/icon-scissors.svg" alt="">
+        </div>
+      </div>
+      <div class="down">
+        <div class="rock">
+          <img src="./images/icon-rock.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <dialog id="rules">
+      <form method="dialog">
+        <h1>RULES</h1>
+        <button onclick="rules.closeModal()">
+          <img src="./images/icon-close.svg" alt="">
+        </button>
+      </form>
+    </dialog>
+    <div class="bottom">
+      <button onclick="rules.showModal()">RULES</button>
+    </div>
+  </section>
+  <section class="none">
+    You Picked <br>
+    The House Picked <br>
+  
+    You Win
+    You Lose
+  
+    Play Again
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
