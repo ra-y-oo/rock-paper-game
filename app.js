@@ -1,3 +1,7 @@
+
+const userscore = 0;
+const score = document.getElementById("score");
+
 const getUserChoice = userInput => {
     userInput = userInput.toLowerCase();
     if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') {
